@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Test Appointment</title>
+    <link rel="stylesheet" href="css/lab-test.css">
+</head>
+
+<body>
+    <section>
+        <div class="container" width="100%">
+
+
+            <form action="" id="lab-form">
+                <div class="image" width="50%">
+                    <img src="images\Lab-Test\lab-test.jpg" alt="Lab-Test">
+                </div>
+                <div class="text" width="50%">
+                    <article>
+                        <h1>1. Your Contact Details</h1>
+                        <!--h3>Full Name</h3-->
+                        <table>
+                            <tr>
+                                <td>
+                                    <input type="text" title="name" required spellcheck="true" placeholder="Full Name">
+                                </td>
+                                <!--h3>Patient Id</h3-->
+                                <td><input type="number" min="6000000000" max="9999999999"
+                                        placeholder="Patient Id if Exists"></td>
+                            </tr>
+                            <!--h3>Phone No</h3-->
+                            <tr>
+                                <td>
+                                    <input type="number" min="6000000000" max="9999999999" required
+                                        placeholder="Phone No">
+                                </td>
+                                <td>
+                                    <!--h3>Email Address</h3-->
+                                    <input type="email" required placeholder="Email Address">
+                                </td>
+
+                            </tr>
+                        </table>
+                    </article>
+
+
+
+                    <article>
+                        <table>
+                            <h2>2.Address</h2>
+                            <tr>
+                                <!--h3>H:No</h3-->
+                                <td>
+                                    <input type="text" required placeholder="House Number">
+                                </td>
+                                <td>
+                                    <!--h3>Street</h3-->
+                                    <input type="text" required placeholder="Street">
+                                </td>
+
+                            </tr>
+
+                            <!--h3>Area</h3-->
+                            <tr>
+                                <td>
+                                    <input type="text" required placeholder="Area">
+                                </td>
+                            </tr>
+                        </table>
+
+                        <h3>District</h3>
+                        <select name="District" id="district" required>
+                            <option value="">Choose</option>
+                            <option value="Bangalore Urban">Bangalore Urban</option>
+                            <option value="Bangalore Rural">Bangalore Rural</option>
+                            <option value="Ramnagar">Ramnagar</option>
+                        </select>
+                    </article>
+
+                    <article>
+                        <h3>3.Choose the Test Type</h3>
+                        <p>
+                        <h3>Check atleast one box without fail</h3>
+                        </p>
+                        <input type="checkbox" id="c1" name="option1" value="Blood count">
+                        <label for="c1">CBC</label>
+                        <br>
+                        <input type="checkbox" id="c2" name="option2" value="Urine count">
+                        <label for="c2">Complete Urine</label>
+                        <br>
+                        <input type="checkbox" id="c3" name="option3" value="Heart functioning">
+                        <label for="c3">Lipid Profile</label>
+                        <br>
+                        <input type="checkbox" id="c4" name="option3" value="Hormonal">
+                        <label for="c3">Thyroid profile</label>
+                        <br>
+                        <input type="checkbox" id="c4" name="option3" value="Glucose level">
+                        <label for="c4">Glucose Test</label>
+                    </article>
+
+                    <article>
+                        <h3>4.Do you want hard copy of the report?</h3>
+                        <input type="radio" id="c5" name="option" value="True" required>
+                        <label for="c5">Yes</label>
+                        <br>
+                        <input type="radio" id="c6" name="option" value="False">
+                        <label for="c6">No</label>
+                    </article>
+
+                    <article>
+                        <h3>5.Select Your Comfortable Date and Time</h3>
+                        <label for="date">Date:</label>
+                        <input type="Date" required>
+                        <label for="time">Time:</label>
+                        <input type="time" required>
+                    </article>
+                    <br>
+                   
+                </div>
+
+                <div class="button-center" width="100%">
+                    <button form="lab-form"> Reset</button>
+                    <button form="lab-form"> Submit</button>
+                </div>
+                
+                
+               
+            </form>
+
+        </div>
+        
+    </section>
+    
+</body>
+
+</html>
